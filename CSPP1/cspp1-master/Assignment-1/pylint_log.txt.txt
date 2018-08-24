@@ -1,0 +1,440 @@
+Microsoft Windows [Version 10.0.17134.165]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+F:\Intern Mentor\CSPP1\cspp1\Assignment-1>pylint Solution.py
+************* Module Solution
+Solution.py:2:0: C0301: Line too long (108/100) (line-too-long)
+Solution.py:8:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+Solution.py:14:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+Solution.py:14:5: C0326: Exactly one space required around comparison
+        if n==0:
+     ^^ (bad-whitespace)
+Solution.py:15:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+Solution.py:16:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+Solution.py:16:7: C0326: Exactly one space required around comparison
+        elif n==1:
+       ^^ (bad-whitespace)
+Solution.py:17:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+Solution.py:18:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+Solution.py:19:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+Solution.py:20:0: C0303: Trailing whitespace (trailing-whitespace)
+Solution.py:24:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+Solution.py:24:5: C0326: Exactly one space required around assignment
+        data=input()
+     ^ (bad-whitespace)
+Solution.py:25:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+Solution.py:26:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+Solution.py:27:26: C0303: Trailing whitespace (trailing-whitespace)
+Solution.py:27:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+Solution.py:29:11: C0326: Exactly one space required before comparison
+if __name__== "__main__":
+           ^^ (bad-whitespace)
+Solution.py:30:0: C0304: Final newline missing (missing-final-newline)
+Solution.py:30:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+Solution.py:1:0: C0103: Module name "Solution" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:1:0: C0111: Missing module docstring (missing-docstring)
+Solution.py:7:0: C0103: Argument name "n" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:14:1: R1705: Unnecessary "else" after "return" (no-else-return)
+Solution.py:23:0: C0111: Missing function docstring (missing-docstring)
+Solution.py:26:2: C0103: Variable name "a" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:25:5: W0612: Unused variable 'i' (unused-variable)
+
+-------------------------------------
+Your code has been rated at -10.77/10
+
+
+F:\Intern Mentor\CSPP1\cspp1\Assignment-1>pylint Solution.py
+************* Module Solution
+Solution.py:2:0: C0301: Line too long (108/100) (line-too-long)
+Solution.py:8:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+Solution.py:14:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+Solution.py:14:5: C0326: Exactly one space required around comparison
+        if n==0:
+     ^^ (bad-whitespace)
+Solution.py:15:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+Solution.py:16:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+Solution.py:16:7: C0326: Exactly one space required around comparison
+        elif n==1:
+       ^^ (bad-whitespace)
+Solution.py:17:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+Solution.py:18:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+Solution.py:19:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+Solution.py:20:0: C0303: Trailing whitespace (trailing-whitespace)
+Solution.py:24:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+Solution.py:24:5: C0326: Exactly one space required around assignment
+        data=input()
+     ^ (bad-whitespace)
+Solution.py:25:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+Solution.py:26:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+Solution.py:27:26: C0303: Trailing whitespace (trailing-whitespace)
+Solution.py:27:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+Solution.py:29:11: C0326: Exactly one space required before comparison
+if __name__== "__main__":
+           ^^ (bad-whitespace)
+Solution.py:30:0: C0304: Final newline missing (missing-final-newline)
+Solution.py:30:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+Solution.py:1:0: C0103: Module name "Solution" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:1:0: C0111: Missing module docstring (missing-docstring)
+Solution.py:7:0: C0103: Argument name "n" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:14:1: R1705: Unnecessary "else" after "return" (no-else-return)
+Solution.py:23:0: C0111: Missing function docstring (missing-docstring)
+Solution.py:26:2: C0103: Variable name "a" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:25:5: W0612: Unused variable 'i' (unused-variable)
+
+----------------------------------------------------------------------
+Your code has been rated at -10.77/10 (previous run: -10.77/10, +0.00)
+
+
+F:\Intern Mentor\CSPP1\cspp1\Assignment-1>pylint Solution.py
+************* Module Solution
+Solution.py:2:0: C0301: Line too long (108/100) (line-too-long)
+Solution.py:14:8: C0326: Exactly one space required around comparison
+    if n==0:
+        ^^ (bad-whitespace)
+Solution.py:16:10: C0326: Exactly one space required around comparison
+    elif n==1:
+          ^^ (bad-whitespace)
+Solution.py:20:0: C0303: Trailing whitespace (trailing-whitespace)
+Solution.py:24:8: C0326: Exactly one space required around assignment
+    data=input()
+        ^ (bad-whitespace)
+Solution.py:27:32: C0303: Trailing whitespace (trailing-whitespace)
+Solution.py:29:11: C0326: Exactly one space required before comparison
+if __name__== "__main__":
+           ^^ (bad-whitespace)
+Solution.py:30:0: C0304: Final newline missing (missing-final-newline)
+Solution.py:1:0: C0103: Module name "Solution" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:1:0: C0111: Missing module docstring (missing-docstring)
+Solution.py:7:0: C0103: Argument name "n" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:14:4: R1705: Unnecessary "else" after "return" (no-else-return)
+Solution.py:23:0: C0111: Missing function docstring (missing-docstring)
+Solution.py:26:8: C0103: Variable name "a" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:25:8: W0612: Unused variable 'i' (unused-variable)
+
+---------------------------------------------------------------------
+Your code has been rated at -1.54/10 (previous run: -10.77/10, +9.23)
+
+
+F:\Intern Mentor\CSPP1\cspp1\Assignment-1>pylint Solution.py
+************* Module Solution
+Solution.py:28:0: E0001: unindent does not match any outer indentation level (<unknown>, line 28) (syntax-error)
+
+F:\Intern Mentor\CSPP1\cspp1\Assignment-1>pylint Solution.py
+************* Module Solution
+Solution.py:2:0: C0301: Line too long (108/100) (line-too-long)
+Solution.py:14:8: C0326: Exactly one space required around comparison
+    if n==0:
+        ^^ (bad-whitespace)
+Solution.py:16:10: C0326: Exactly one space required around comparison
+    elif n==1:
+          ^^ (bad-whitespace)
+Solution.py:20:0: C0303: Trailing whitespace (trailing-whitespace)
+Solution.py:28:8: C0326: Exactly one space required around assignment
+    data=input()
+        ^ (bad-whitespace)
+Solution.py:31:32: C0303: Trailing whitespace (trailing-whitespace)
+Solution.py:33:11: C0326: Exactly one space required before comparison
+if __name__== "__main__":
+           ^^ (bad-whitespace)
+Solution.py:34:0: C0304: Final newline missing (missing-final-newline)
+Solution.py:1:0: C0103: Module name "Solution" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:1:0: C0111: Missing module docstring (missing-docstring)
+Solution.py:7:0: C0103: Argument name "n" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:14:4: R1705: Unnecessary "else" after "return" (no-else-return)
+Solution.py:30:8: C0103: Variable name "a" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:29:8: W0612: Unused variable 'i' (unused-variable)
+
+--------------------------------------------------------------------
+Your code has been rated at -0.77/10 (previous run: -1.54/10, +0.77)
+
+
+F:\Intern Mentor\CSPP1\cspp1\Assignment-1>pylint Solution.py
+************* Module Solution
+Solution.py:2:0: C0301: Line too long (108/100) (line-too-long)
+Solution.py:14:8: C0326: Exactly one space required around comparison
+    if n==0:
+        ^^ (bad-whitespace)
+Solution.py:16:10: C0326: Exactly one space required around comparison
+    elif n==1:
+          ^^ (bad-whitespace)
+Solution.py:20:0: C0303: Trailing whitespace (trailing-whitespace)
+Solution.py:28:8: C0326: Exactly one space required around assignment
+    data=input()
+        ^ (bad-whitespace)
+Solution.py:31:32: C0303: Trailing whitespace (trailing-whitespace)
+Solution.py:33:11: C0326: Exactly one space required before comparison
+if __name__== "__main__":
+           ^^ (bad-whitespace)
+Solution.py:34:0: C0304: Final newline missing (missing-final-newline)
+Solution.py:1:0: C0103: Module name "Solution" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:1:0: C0111: Missing module docstring (missing-docstring)
+Solution.py:7:0: C0103: Argument name "n" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:14:4: R1705: Unnecessary "else" after "return" (no-else-return)
+Solution.py:30:8: C0103: Variable name "a" doesn't conform to snake_case naming style (invalid-name)
+
+-------------------------------------------------------------------
+Your code has been rated at 0.00/10 (previous run: -0.77/10, +0.77)
+
+
+F:\Intern Mentor\CSPP1\cspp1\Assignment-1>pylint Solution.py
+************* Module Solution
+Solution.py:2:0: C0301: Line too long (108/100) (line-too-long)
+Solution.py:14:8: C0326: Exactly one space required around comparison
+    if n==0:
+        ^^ (bad-whitespace)
+Solution.py:16:10: C0326: Exactly one space required around comparison
+    elif n==1:
+          ^^ (bad-whitespace)
+Solution.py:20:0: C0303: Trailing whitespace (trailing-whitespace)
+Solution.py:28:8: C0326: Exactly one space required around assignment
+    data=input()
+        ^ (bad-whitespace)
+Solution.py:31:32: C0303: Trailing whitespace (trailing-whitespace)
+Solution.py:33:11: C0326: Exactly one space required before comparison
+if __name__== "__main__":
+           ^^ (bad-whitespace)
+Solution.py:34:0: C0304: Final newline missing (missing-final-newline)
+Solution.py:1:0: C0103: Module name "Solution" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:1:0: C0111: Missing module docstring (missing-docstring)
+Solution.py:7:0: C0103: Argument name "n" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:14:4: R1705: Unnecessary "else" after "return" (no-else-return)
+Solution.py:31:28: E0602: Undefined variable 'a' (undefined-variable)
+Solution.py:30:8: W0612: Unused variable 'user_input' (unused-variable)
+
+-------------------------------------------------------------------
+Your code has been rated at -3.85/10 (previous run: 0.00/10, -3.85)
+
+
+F:\Intern Mentor\CSPP1\cspp1\Assignment-1>pylint Solution.py
+************* Module Solution
+Solution.py:2:0: C0301: Line too long (108/100) (line-too-long)
+Solution.py:14:8: C0326: Exactly one space required around comparison
+    if n==0:
+        ^^ (bad-whitespace)
+Solution.py:16:10: C0326: Exactly one space required around comparison
+    elif n==1:
+          ^^ (bad-whitespace)
+Solution.py:20:0: C0303: Trailing whitespace (trailing-whitespace)
+Solution.py:28:8: C0326: Exactly one space required around assignment
+    data=input()
+        ^ (bad-whitespace)
+Solution.py:31:41: C0303: Trailing whitespace (trailing-whitespace)
+Solution.py:33:11: C0326: Exactly one space required before comparison
+if __name__== "__main__":
+           ^^ (bad-whitespace)
+Solution.py:34:0: C0304: Final newline missing (missing-final-newline)
+Solution.py:1:0: C0103: Module name "Solution" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:1:0: C0111: Missing module docstring (missing-docstring)
+Solution.py:7:0: C0103: Argument name "n" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:14:4: R1705: Unnecessary "else" after "return" (no-else-return)
+
+-------------------------------------------------------------------
+Your code has been rated at 0.77/10 (previous run: -3.85/10, +4.62)
+
+
+F:\Intern Mentor\CSPP1\cspp1\Assignment-1>pylint Solution.py
+************* Module Solution
+Solution.py:2:0: C0301: Line too long (108/100) (line-too-long)
+Solution.py:14:8: C0326: Exactly one space required around comparison
+    if n==0:
+        ^^ (bad-whitespace)
+Solution.py:16:10: C0326: Exactly one space required around comparison
+    elif n==1:
+          ^^ (bad-whitespace)
+Solution.py:19:0: C0303: Trailing whitespace (trailing-whitespace)
+Solution.py:27:8: C0326: Exactly one space required around assignment
+    data=input()
+        ^ (bad-whitespace)
+Solution.py:30:41: C0303: Trailing whitespace (trailing-whitespace)
+Solution.py:32:11: C0326: Exactly one space required before comparison
+if __name__== "__main__":
+           ^^ (bad-whitespace)
+Solution.py:33:0: C0304: Final newline missing (missing-final-newline)
+Solution.py:1:0: C0103: Module name "Solution" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:1:0: C0111: Missing module docstring (missing-docstring)
+Solution.py:7:0: C0103: Argument name "n" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:14:4: R1705: Unnecessary "else" after "return" (no-else-return)
+
+------------------------------------------------------------------
+Your code has been rated at 0.77/10 (previous run: 0.77/10, +0.00)
+
+
+F:\Intern Mentor\CSPP1\cspp1\Assignment-1>pylint Solution.py
+************* Module Solution
+Solution.py:2:0: C0301: Line too long (108/100) (line-too-long)
+Solution.py:14:8: C0326: Exactly one space required around comparison
+    if n==0 :
+        ^^ (bad-whitespace)
+Solution.py:14:12: C0326: No space allowed before :
+    if n==0 :
+            ^ (bad-whitespace)
+Solution.py:17:0: C0303: Trailing whitespace (trailing-whitespace)
+Solution.py:25:8: C0326: Exactly one space required around assignment
+    data=input()
+        ^ (bad-whitespace)
+Solution.py:28:41: C0303: Trailing whitespace (trailing-whitespace)
+Solution.py:30:11: C0326: Exactly one space required before comparison
+if __name__== "__main__":
+           ^^ (bad-whitespace)
+Solution.py:31:0: C0304: Final newline missing (missing-final-newline)
+Solution.py:1:0: C0103: Module name "Solution" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:1:0: C0111: Missing module docstring (missing-docstring)
+Solution.py:7:0: C0103: Argument name "n" doesn't conform to snake_case naming style (invalid-name)
+
+------------------------------------------------------------------
+Your code has been rated at 0.00/10 (previous run: 0.77/10, -0.77)
+
+
+F:\Intern Mentor\CSPP1\cspp1\Assignment-1>pylint Solution.py
+************* Module Solution
+Solution.py:2:0: C0301: Line too long (108/100) (line-too-long)
+Solution.py:14:13: C0326: Exactly one space required around comparison
+    if number==0 :
+             ^^ (bad-whitespace)
+Solution.py:14:17: C0326: No space allowed before :
+    if number==0 :
+                 ^ (bad-whitespace)
+Solution.py:17:0: C0303: Trailing whitespace (trailing-whitespace)
+Solution.py:25:8: C0326: Exactly one space required around assignment
+    data=input()
+        ^ (bad-whitespace)
+Solution.py:28:41: C0303: Trailing whitespace (trailing-whitespace)
+Solution.py:31:0: C0304: Final newline missing (missing-final-newline)
+Solution.py:1:0: C0103: Module name "Solution" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:1:0: C0111: Missing module docstring (missing-docstring)
+
+------------------------------------------------------------------
+Your code has been rated at 1.82/10 (previous run: 0.00/10, +1.82)
+
+
+F:\Intern Mentor\CSPP1\cspp1\Assignment-1>pylint Solution.py
+************* Module Solution
+Solution.py:2:0: C0301: Line too long (108/100) (line-too-long)
+Solution.py:14:13: C0326: Exactly one space required around comparison
+    if number==0 :
+             ^^ (bad-whitespace)
+Solution.py:14:17: C0326: No space allowed before :
+    if number==0 :
+                 ^ (bad-whitespace)
+Solution.py:17:0: C0303: Trailing whitespace (trailing-whitespace)
+Solution.py:28:41: C0303: Trailing whitespace (trailing-whitespace)
+Solution.py:31:0: C0304: Final newline missing (missing-final-newline)
+Solution.py:1:0: C0103: Module name "Solution" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:1:0: C0111: Missing module docstring (missing-docstring)
+
+------------------------------------------------------------------
+Your code has been rated at 2.73/10 (previous run: 1.82/10, +0.91)
+
+
+F:\Intern Mentor\CSPP1\cspp1\Assignment-1>pylint Solution.py
+************* Module Solution
+Solution.py:2:0: C0301: Line too long (108/100) (line-too-long)
+Solution.py:14:19: C0326: No space allowed before :
+    if number == 0 :
+                   ^ (bad-whitespace)
+Solution.py:17:0: C0303: Trailing whitespace (trailing-whitespace)
+Solution.py:28:41: C0303: Trailing whitespace (trailing-whitespace)
+Solution.py:31:0: C0304: Final newline missing (missing-final-newline)
+Solution.py:1:0: C0103: Module name "Solution" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:1:0: C0111: Missing module docstring (missing-docstring)
+
+------------------------------------------------------------------
+Your code has been rated at 3.64/10 (previous run: 2.73/10, +0.91)
+
+
+F:\Intern Mentor\CSPP1\cspp1\Assignment-1>pylint Solution.py
+************* Module Solution
+Solution.py:2:0: C0301: Line too long (108/100) (line-too-long)
+Solution.py:17:0: C0303: Trailing whitespace (trailing-whitespace)
+Solution.py:28:41: C0303: Trailing whitespace (trailing-whitespace)
+Solution.py:31:0: C0304: Final newline missing (missing-final-newline)
+Solution.py:1:0: C0103: Module name "Solution" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:1:0: C0111: Missing module docstring (missing-docstring)
+
+------------------------------------------------------------------
+Your code has been rated at 4.55/10 (previous run: 3.64/10, +0.91)
+
+
+F:\Intern Mentor\CSPP1\cspp1\Assignment-1>pylint Solution.py
+************* Module Solution
+Solution.py:2:0: C0301: Line too long (108/100) (line-too-long)
+Solution.py:17:0: C0303: Trailing whitespace (trailing-whitespace)
+Solution.py:31:0: C0304: Final newline missing (missing-final-newline)
+Solution.py:1:0: C0103: Module name "Solution" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:1:0: C0111: Missing module docstring (missing-docstring)
+
+------------------------------------------------------------------
+Your code has been rated at 5.45/10 (previous run: 4.55/10, +0.91)
+
+
+F:\Intern Mentor\CSPP1\cspp1\Assignment-1>pylint Solution.py
+************* Module Solution
+Solution.py:2:0: C0301: Line too long (108/100) (line-too-long)
+Solution.py:17:0: C0303: Trailing whitespace (trailing-whitespace)
+Solution.py:1:0: C0103: Module name "Solution" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:1:0: C0111: Missing module docstring (missing-docstring)
+
+------------------------------------------------------------------
+Your code has been rated at 6.36/10 (previous run: 5.45/10, +0.91)
+
+
+F:\Intern Mentor\CSPP1\cspp1\Assignment-1>pylint Solution.py
+************* Module Solution
+Solution.py:3:0: C0301: Line too long (106/100) (line-too-long)
+Solution.py:18:0: C0303: Trailing whitespace (trailing-whitespace)
+Solution.py:1:0: C0103: Module name "Solution" doesn't conform to snake_case naming style (invalid-name)
+
+------------------------------------------------------------------
+Your code has been rated at 7.27/10 (previous run: 6.36/10, +0.91)
+
+
+F:\Intern Mentor\CSPP1\cspp1\Assignment-1>pylint Solution.py
+************* Module Solution
+Solution.py:3:0: C0301: Line too long (106/100) (line-too-long)
+Solution.py:1:0: C0103: Module name "Solution" doesn't conform to snake_case naming style (invalid-name)
+
+------------------------------------------------------------------
+Your code has been rated at 8.18/10 (previous run: 7.27/10, +0.91)
+
+
+F:\Intern Mentor\CSPP1\cspp1\Assignment-1>pylint Solution.py
+************* Module Solution
+Solution.py:3:67: C0303: Trailing whitespace (trailing-whitespace)
+Solution.py:1:0: C0103: Module name "Solution" doesn't conform to snake_case naming style (invalid-name)
+
+------------------------------------------------------------------
+Your code has been rated at 8.18/10 (previous run: 8.18/10, +0.00)
+
+
+F:\Intern Mentor\CSPP1\cspp1\Assignment-1>pylint Solution.py
+************* Module Solution
+Solution.py:3:67: C0303: Trailing whitespace (trailing-whitespace)
+Solution.py:1:0: C0103: Module name "Solution" doesn't conform to snake_case naming style (invalid-name)
+
+------------------------------------------------------------------
+Your code has been rated at 8.18/10 (previous run: 8.18/10, +0.00)
+
+
+F:\Intern Mentor\CSPP1\cspp1\Assignment-1>pylint Solution.py
+************* Module Solution
+Solution.py:1:0: C0103: Module name "Solution" doesn't conform to snake_case naming style (invalid-name)
+
+------------------------------------------------------------------
+Your code has been rated at 9.09/10 (previous run: 8.18/10, +0.91)
+
+
+F:\Intern Mentor\CSPP1\cspp1\Assignment-1>pylint Solution.py
+************* Module Solution
+Solution.py:1:0: C0103: Module name "Solution" doesn't conform to snake_case naming style (invalid-name)
+
+------------------------------------------------------------------
+Your code has been rated at 9.09/10 (previous run: 9.09/10, +0.00)
+
+
+F:\Intern Mentor\CSPP1\cspp1\Assignment-1>pylint solution.py
+
+-------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 9.09/10, +0.91)
+
+
+F:\Intern Mentor\CSPP1\cspp1\Assignment-1>
