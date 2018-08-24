@@ -57,12 +57,13 @@ def process_queries(search_index, queries):
     '''
     for line in queries:
         print(search(search_index, line))
+
 def main():
     '''
         main function
     '''
     # This line loads the search index
-    search_index = eval(input()
+    search_index = eval(input())
     # read the number of search queries
     lines = int(input())
     # read the search queries into a list
