@@ -37,7 +37,7 @@ def search(search_index, query):
         make a set of doc_id and return
     '''
     # print(query)
-    query=query.lower().split()
+    query = query.lower().split()
     new = set()
     # print(query)
     for sub_ele in query:
@@ -49,10 +49,6 @@ def search(search_index, query):
                 new.add(search_index[sub_ele][i][0])
                 i = i + 1
     return new
-
-
-    
-
 def process_queries(search_index, queries):
     '''
         function to process the search queries
@@ -61,25 +57,19 @@ def process_queries(search_index, queries):
     '''
     for line in queries:
         print(search(search_index, line))
-
-
-
 def main():
     '''
         main function
     '''
     # This line loads the search index
-    search_index = eval(input())
-
+    search_index = eval(input()
     # read the number of search queries
     lines = int(input())
-    
     # read the search queries into a list
     queries = []
     for i in range(lines):
         queries.append(input())
         i += 1
-
     # call process queries
     process_queries(search_index, queries)
 
