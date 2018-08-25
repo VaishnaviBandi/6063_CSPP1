@@ -33,7 +33,7 @@ def main():
     for each_line in range(noof_lines):
         string = (input())
         stringed = regex.sub("", string)
-        print(tokenize(stringed.split(),string))
+    print(tokenize(stringed.split(),string))
     
 
 if __name__ == '__main__':
