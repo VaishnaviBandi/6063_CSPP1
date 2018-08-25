@@ -30,7 +30,7 @@ def main():
     string = {}
     regex = re.compile('[^A-Za-z],""')
     noof_lines = int(input())
-    for each_line in range(noof_lines:-1):
+    for each_line in range(noof_lines):
         string = (input())
         stringed = regex.sub("", string)
         tokenize = tokenize(stringed.split(),dict1)
