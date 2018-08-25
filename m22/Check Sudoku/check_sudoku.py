@@ -26,7 +26,6 @@ def check_sudoku(sudoku):
     #                                                 return False
     #                         return True
     #         return False
-    ------------
     # def zip(*iterables)
     # sentinel = object()
     # iterators = [iter(it) for it in iterables]
