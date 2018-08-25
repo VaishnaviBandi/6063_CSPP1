@@ -44,7 +44,6 @@ def check_sudoku(sudoku):
     #     if sum(sudoku[i]) != 45 or sum(new_row[i]) != 45:
     #         return False
     # return True
-    ---------------
     def check(sud):
     zippedsud = zip(*sud)
 
