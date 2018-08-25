@@ -14,6 +14,7 @@ alphabets in both upper and lower case and numbers"""
     return new_string
 
 def main():
+    """ main function calling clean_string function"""
     string = input()
     print(clean_string(string))
 
