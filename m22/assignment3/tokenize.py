@@ -7,10 +7,6 @@ from collections import Counter
 def tokenize(string):
     dict1 = {}
     list1 = []
-    regex = re.compile('[^A-Za-z]')
-    for word in string:
-        word = regex.sub("", word)
-    string = string + word
     for word in string:
         if word in dict1:
             dict1[word] += 1
@@ -36,6 +32,10 @@ def main():
     for each_line in range(no_of_lines):
         string = string + (input())
         each_line += 1
+    regex = re.compile('[^A-Za-z],""')
+    for word in string:
+        word = regex.sub("", word)
+        string = string + word
     print(tokenize(string))
 
 if __name__ == '__main__':
