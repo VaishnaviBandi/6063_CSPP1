@@ -44,7 +44,7 @@ def check_sudoku(sudoku):
     #         return False
     # return True
     def check(sud):
-    zippedsud = zip(*sud)
+        zippedsud = zip(*sud)
 
     boxedsud=[]
     for li,line in enumerate(sud):
