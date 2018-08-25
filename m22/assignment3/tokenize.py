@@ -28,12 +28,13 @@ def tokenize(string):
             
 def main():
     string = {}
+    tokenize = {}
     regex = re.compile('[^A-Za-z],""')
     noof_lines = int(input())
     for each_line in range(noof_lines):
         string = (input())
         stringed = regex.sub("", string)
-        tokenize = tokenize(stringed.split(),dict1)
+        tokenize = tokenize(stringed.split(), string)
     print(tokenize)
 
 if __name__ == '__main__':
