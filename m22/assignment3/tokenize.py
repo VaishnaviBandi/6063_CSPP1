@@ -30,11 +30,11 @@ def main():
     string = {}
     regex = re.compile('[^A-Za-z],""')
     noof_lines = int(input())
-    for each_line in range(noof_lines):
+    for each_line in range(noof_lines:-1):
         string = (input())
         stringed = regex.sub("", string)
-    print(tokenize(stringed.split(),string))
-    
+        tokenize = tokenize(stringed.split(),dict1)
+    print(tokenize)
 
 if __name__ == '__main__':
     main()
