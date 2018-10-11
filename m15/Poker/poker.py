@@ -255,6 +255,46 @@ def poker(hands):
         Output: Return the winning poker hand
     '''
 
+    # the line below may be new to you
+    # max function is provided by python library
+    # learn how it works, in particular the key argument, from the link
+    # https://www.programiz.com/python-programming/methods/built-in/max
+    # hand_rank is a function passed to max
+    # hand_rank takes a hand and returns its rank
+    # max uses the rank returned by hand_rank and returns the best hand
+    # print(HANDS)
+    # print(COUNT)
+    # for x in range(COUNT):
+    # ----------------------------
+    # rank_dict = {rank: list(hand_rank(HANDS[rank])) for rank in range(COUNT)}
+    #     #rank_dict = [list[hand_rank(HANDS[rank])] for rank in range(COUNT)]
+    #     rank_list = [rank_dict[rank_][0] for rank_ in range(len(rank_dict))]
+    #     high_card_list = [rank_dict[high_][1] for high_ in range(len(rank_dict))]
+    #     max_rank = max(rank_list)
+    #     print("max_rank=", max_rank)
+    #     print("Rank list", rank_list)
+    #     print(rank_dict)
+    #     key = list(rank_dict.keys())
+    #     max_rank_count = rank_list.count(max_count)
+    #     if max_rank_count != 1:
+    #         for i in range(max_rank_count):
+    #             if rank_dict[i][0] == max_rank:
+    #                 ans_dict = i
+    #
+    '''            --------------------------------
+    max_rank_new = 0
+    high_card_new = 0
+    ans_hand = 0
+    for rank_iter in range(len(rank_dict)):
+        if max_rank_new < rank_dict[rank_iter][0] and high_card_new < rank_dict[rank_iter][1]:
+            max_rank_new = rank_dict[rank_iter][0]
+            high_card_new = rank_dict[rank_iter][1]
+            ans_hand = rank_iter
+    print(HANDS[ans_hand])
+    '''
+    # print( / key)
+    # print("Count of max ranks", dict_count)
+
     return max(hands, key=hand_rank)
 
 
