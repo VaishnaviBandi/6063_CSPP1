@@ -26,7 +26,7 @@ def val_to_num(hand):
     # return new_hand
     precedence_string = "--23456789TJQKA"
     new_hand = hand.copy()
-    return sorted([Precedence_string.index(val) for val, suite in new_hand], reverse=True)
+    return sorted([precedence_string.index(val) for val, suite in new_hand], reverse=True)
 
 
 def is_royal_flush(hand):
