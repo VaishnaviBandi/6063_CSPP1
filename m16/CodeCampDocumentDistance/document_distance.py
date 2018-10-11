@@ -1,80 +1,68 @@
 '''
-    Document Distance - A detailed description is given in the PDF
+Document Distance - A detailed description is given in the PDF
 '''
 import re
-from collections import Counter
 import math
+
+
+def get_word_freq(list_a, list_b):
+    '''
+    This function takes inputs list_1 and list_b as 2 lists
+    and returns a Dictionary of repeated words from each list
+    '''
+
+    for each_word in list_a:
+        if each_word in FREQ_DICT and each_word not in STOP_DICT.keys():
+            FREQ_DICT[each_word][0] += 1
+        else:
+            FREQ_DICT[each_word] = [1]
+            FREQ_DICT[each_word].append(0)
+
+    for each_word in list_b:
+        if each_word in FREQ_DICT and each_word not in STOP_DICT.keys():
+            FREQ_DICT[each_word][1] += 1
+        else:
+            FREQ_DICT[each_word] = [0, 1]
+    return FREQ_DICT
+
+
 def similarity(dict1, dict2):
     '''
         Compute the document distance as given in the PDF
     '''
-    regex = re.compile('[^ a-z]')
     dict1 = dict1.lower()
     dict2 = dict2.lower()
-    d1 = []
-    d2 = []
-    improvised1 = []
-    improvised2 = []
-    dict1 = dict1.split()
-    dict2 = dict2.split()
-    for x in dict1:
-        x = x.strip('')    
-    for x in dict2:
-        x = x.strip('')
-    for x in dict1:
-        x = regex.sub("", x)
-        d1.append(x)
-    for x in dict2:  
-        x = regex.sub("", x)
-        d2.append(x)
-    stopwords = load_stopwords("stopwords.txt")
-    for x in d1:
-        if x not in stopwords.keys():
-            improvised1.append(x)
-    for x in d2:
-        if x not in stopwords.keys():
-            improvised2.append(x)
-    frequency1 = {}
-    frequency1 = frequency(improvised1, improvised2)
-    num_sum = 0
-    for x in frequency1.values():
-        num_sum = num_sum + (int(x[0]) * int(x[1]))
-    by = 0
-    by1 = 0
-    for x in frequency1.values():
-        by = by + (int(x[0]) * int(x[0]))
-    by11 = math.sqrt(by)
-    for x in frequency1.values():
-        by1 = by1 + (int(x[1]) * int(x[1]))
-    by12 = math.sqrt(by1)
-    numerator = num_sum
-    denominator = by11 * by12
-    return numerator/denominator
+    dict1 = re.sub("[^ a-z]", '', dict1.strip())
+    dict2 = re.sub("[^ a-z]", '', dict2.strip())
+    # f1_list = dict1.split()
+    # f2_list = dict2.split()
+    new_list_1 = [each_ele for each_ele in dict1.split() if each_ele not in STOP_DICT.keys()]
+    new_list_2 = [each_ele for each_ele in dict2.split() if each_ele not in STOP_DICT.keys()]
+    word_freq = get_word_freq(new_list_1, new_list_2)
+    num = 0
+    d_1 = 0
+    d_2 = 0
+    for dict_key in word_freq:
+        num += word_freq[dict_key][0] * word_freq[dict_key][1]
+        d_1 += word_freq[dict_key][0]**2
+        d_2 += word_freq[dict_key][1]**2
+    return num / (math.sqrt(d_1) * math.sqrt(d_2))
 
-
-def frequency(list1, list2):
-    m1 = dict(Counter(list1))
-    m2 = dict(Counter(list2))
-    m3 = {}
-    for x in m1:
-        if x in m2:
-            m3[x] = [m1[x], m2[x]]
-        else:
-            m3[x] = [m1[x], 0]
-    for x in m2:
-        if x not in m1:
-            m3[x] = [0, m2[x]]
-    return m3
 
 def load_stopwords(filename):
     '''
-        loads stop words from a file and returns a dictionary
+    loads stop words from a file and returns a dictionary
     '''
     stopwords = {}
-    with open(filename, 'r') as filename:
-        for line in filename:
+    with open(filename, 'r') as my_file:
+        for line in my_file:
             stopwords[line.strip()] = 0
     return stopwords
+
+
+STOP_DICT = load_stopwords("stopwords.txt")
+FREQ_DICT = {}
+
 
 def main():
     '''
@@ -82,8 +70,8 @@ def main():
     '''
     input1 = input()
     input2 = input()
-
     print(similarity(input1, input2))
+
 
 if __name__ == '__main__':
     main()
